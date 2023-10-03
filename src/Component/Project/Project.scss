@@ -1,0 +1,18 @@
+details {
+  cursor: pointer;
+}
+section {
+  padding: var(--spacing-3) 0;
+}
+
+.project-image {
+  width: 50%;
+}
+
+.project-title h3 {
+  display: inline;
+}
+
+summary {
+  list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
