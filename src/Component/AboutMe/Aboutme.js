@@ -1,6 +1,6 @@
 import React from 'react'
 import './Aboutme.scss'
-import Portrait from '../../Image/portrait.jpeg'
+import Portrait from '../../Image/portrait.jpg'
 const Aboutme = () => {
   return (
     <div>
@@ -21,7 +21,7 @@ const Aboutme = () => {
               Illum quasi reprehenderit magni. Repudiandae?
               </p>
             </div>
-            <img src={Portrait} alt="Maybe add my portrait" className="portrait"/>
+            <img src={Portrait} alt="Maybe add my portrait" className="portrait" />
           </div>
         </section>
     </div>

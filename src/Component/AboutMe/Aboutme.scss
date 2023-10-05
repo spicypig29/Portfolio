@@ -16,9 +16,10 @@
   margin-right: var(--spacing-3);
 }
 .portrait {
-  width: 300px;
-  border-radius: var(--border-radius);
+  width: 250px;
+  border-radius: 36px;
   flex-shrink: 0;
+  object-fit: cover;
 }
 }
 
