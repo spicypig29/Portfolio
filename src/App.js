@@ -4,6 +4,12 @@ import { FaHtml5,FaCss3Alt,FaJsSquare,FaReact,FaGit,FaGithub , FaMusic} from "re
 import Navbar from './Component/Navbar/Navbar.js';
 import Aboutme from './Component/AboutMe/Aboutme';
 import Project from './Component/Project/Project';
+import Ae from './Image/AE.png'
+import Au from './Image/Au.png'
+import Ai from './Image/adobe-Illustrator-logo-0-1.png'
+import Pr from './Image/Pr.png'
+import LogicPro from './Image/LogicPro.png'
+import ProTools from './Image/ProTools.png'
 
 function App() {
 
@@ -30,9 +36,15 @@ function App() {
               <i><FaGit/></i>
               <i><FaGithub/></i>
             </Space>
-            <Space>
-              <FaMusic/>
-            </Space>
+            <div className='otherSkill_container'>
+              <FaMusic />
+              <img src={ProTools} alt='ProTools' className='otherSkillIcon ProTools'/>
+              <img src={LogicPro} alt='LogicPro' className='otherSkillIcon' />
+              <img src={ Ai } alt='Ai'className='otherSkillIcon'/>
+              <img src={Au} alt='Au' className='otherSkillIcon Au'/>
+              <img src={ Pr } alt='Pr'className='otherSkillIcon Pr'/>
+              <img src={ Ae } alt='Ae'className='otherSkillIcon Ae'/>
+            </div>
           </div>
         </section>
       </main>

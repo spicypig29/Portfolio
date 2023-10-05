@@ -11,8 +11,20 @@ nav {
   align-items: center;
   margin: 0;
   margin-left: auto;
+
+  
 }
 
 .navigation-item {
   margin: var(--spacing-1);
+
+  &:hover{
+    
+    background-color: #e66355;
+    color: #f7d8d5;
+    border-radius: 2em;
+    border: 2px solid #e66355;
+    padding: 3px;
+
+  }
 }
