@@ -1,6 +1,8 @@
 import React from 'react'
 import './Project.scss'
 
+import SinglePageWeb from '../../Image/single page website .png'
+
 const Project = () => {
   return (
     <div>
@@ -9,7 +11,7 @@ const Project = () => {
           <h2>Projects</h2>
           <details className="project">
             <summary className="project-title">
-              <h3>The first computer program</h3>
+              <h3>E-Commerce App</h3>
             </summary>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Diagram_for_the_computation_of_Bernoulli_numbers.jpg/220px-Diagram_for_the_computation_of_Bernoulli_numbers.jpg"
@@ -22,15 +24,16 @@ const Project = () => {
           </details>
           <details className="project">
             <summary className="project-title">
-              <h3>The Analytical Engine</h3>
+              <h3>Single Page Website</h3>
             </summary>
             <img
-              src="https://images2.minutemediacdn.com/image/upload/c_fit,f_auto,fl_lossy,q_auto,w_728/v1555925585/shape/mentalfloss/analyticalmachine_babbage_london.jpg?itok=5vRTwQjb"
-              alt="An original model of part of the Analytical Engine"
-              className="project-image"
+            src={SinglePageWeb}
+            alt="singlepage website"
+            className="project-image"
+            width='300px'
             />
             <p className="project-description">
-              I helped Charles Babbage on topics ranging from math to computation that helped the development of the Analytical Engine.
+              Layout design
             </p>
           </details>
           <details className="project">

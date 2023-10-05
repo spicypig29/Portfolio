@@ -1,18 +1,35 @@
-details {
-  cursor: pointer;
+:root {
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+
+  --border-radius: 12px;
+
+  --font-color: #323232;
 }
-section {
+
+#projects{
   padding: var(--spacing-3) 0;
+  details {
+    cursor: pointer;
+    
+    summary {
+      list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+    }
+    .project-title h3 {
+      display: inline;
+    }
+    .project-image {
+      width: 50%;
+      margin-top: 10px;
+    }
+
+  }
+
 }
 
-.project-image {
-  width: 50%;
-}
 
-.project-title h3 {
-  display: inline;
-}
 
-summary {
-  list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
-}
+
+

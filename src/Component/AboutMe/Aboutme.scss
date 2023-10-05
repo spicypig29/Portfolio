@@ -1,7 +1,24 @@
-.about-me-container {
-  display: flex;
+:root {
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+
+  --border-radius: 12px;
+
+  --font-color: #323232;
 }
 
-.about-me-text-container {
+.about-me-container {
+  display: flex;
+
+  .about-me-text-container {
   margin-right: var(--spacing-3);
 }
+.portrait {
+  width: 300px;
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+}
+}
+

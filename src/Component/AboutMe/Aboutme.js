@@ -1,9 +1,9 @@
 import React from 'react'
 import './Aboutme.scss'
+import Portrait from '../../Image/portrait.jpeg'
 const Aboutme = () => {
   return (
     <div>
-        {/* About Me Section */}
         <section id="about-me">
           <div className="about-me-container">
             <div className="about-me-text-container">
@@ -12,13 +12,16 @@ const Aboutme = () => {
                 Hi! I'm Jung !
               </p>
               <p>
-                p2
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dolor quasi laudantium debitis molestiae,
               </p>
               <p>
-                p3
+                quisquam modi velit quas veniam,
+              odit accusamus adipisci aliquam quae totam iure.
+              Illum quasi reprehenderit magni. Repudiandae?
               </p>
             </div>
-            <img src="#!" alt="Kang Jung" className="portrait"/>
+            <img src={Portrait} alt="Maybe add my portrait" className="portrait"/>
           </div>
         </section>
     </div>
