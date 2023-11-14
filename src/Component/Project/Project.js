@@ -1,57 +1,37 @@
 import React from 'react'
 import './Project.scss'
 
-import SinglePageWeb from '../../Image/single page website .png'
+const CourseItem = ({ title, date }) => (
+  <div className="ag-courses_item">
+    <a href="#" className="ag-courses-item_link">
+      <div className="ag-courses-item_bg"></div>
 
-const Project = () => {
-  return (
-    <div>
-          {/* Projects Section */}
-        <section id="projects">
-          <h2>Projects</h2>
-          <details className="project">
-            <summary className="project-title">
-              <h3>E-Commerce App</h3>
-            </summary>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Diagram_for_the_computation_of_Bernoulli_numbers.jpg/220px-Diagram_for_the_computation_of_Bernoulli_numbers.jpg"
-              alt="Lovelace's diagram from note G, the first published computer algorithm"
-              className="project-image"
-            />
-            <p className="project-description">
-              The world's first computer program for computing Bernoulli numbers.
-            </p>
-          </details>
-          <details className="project">
-            <summary className="project-title">
-              <h3>Single Page Website</h3>
-            </summary>
-            <img
-            src={SinglePageWeb}
-            alt="singlepage website"
-            className="project-image"
-            width='300px'
-            />
-            <p className="project-description">
-              Layout design
-            </p>
-          </details>
-          <details className="project">
-            <summary className="project-title">
-              <h3>The Ada programming language</h3>
-            </summary>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Ada_Mascot_with_slogan.svg/220px-Ada_Mascot_with_slogan.svg.png"
-              alt='Ada mascot, a black and cobalt blue hummingbird, flying above the slogan "Time-tested, safe and secure"'
-              className="project-image"
-            />
-            <p className="project-description">
-              My work inspired the United States Department of Defense to name their new programming language after me.
-            </p>
-          </details>
-        </section>
-    </div>
-  )
-}
+      <div className="ag-courses-item_title">{title}</div>
 
-export default Project
+      {date && (
+        <div className="ag-courses-item_date-box">
+          Start:
+          <span className="ag-courses-item_date">{date}</span>
+        </div>
+      )}
+    </a>
+  </div>
+);
+
+const CoursesBox = () => (
+  <div className="ag-courses_box">
+    <CourseItem title="WebGraph design for teenagers 11-17 years old" date=" 04.11.2022" />
+    <CourseItem title="UX/UI Web-Design + Mobile Design" date=" 04.11.2022" />
+    <CourseItem title="Annual package 'Product+UX/UI+Graph designer 2022'" date=" 04.11.2022" />
+    <CourseItem title="Graphic Design" date="04.11.2022" />
+  </div>
+);
+
+const FormatContainer = () => (
+  <div className="ag-format-container">
+    <CoursesBox />
+  </div>
+);
+
+export default FormatContainer;
+
