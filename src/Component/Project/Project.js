@@ -20,9 +20,9 @@ const CourseItem = ({ title, date }) => (
 
 const CoursesBox = () => (
   <div className="ag-courses_box">
-    <CourseItem title="WebGraph design for teenagers 11-17 years old" date=" 04.11.2022" />
-    <CourseItem title="UX/UI Web-Design + Mobile Design" date=" 04.11.2022" />
-    <CourseItem title="Annual package 'Product+UX/UI+Graph designer 2022'" date=" 04.11.2022" />
+    <CourseItem title="Coffee Shop Website Design" date=" 04.11.2023" />
+    <CourseItem title="UX/UI Web-Design + Mobile Design" date=" 04.11.2023" />
+    <CourseItem title="E-Commerce Webpage" date=" 04.11.2023" />
     <CourseItem title="Graphic Design" date="04.11.2022" />
   </div>
 );
