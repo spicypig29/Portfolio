@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = React.useState(false);
   return (
     <Nav>
-      <Logo>XXXX's Studio</Logo>
+      <Logo>Jung's Studio</Logo>
       <MobileNavToggle onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
         {isMobileNavOpen ? 'Close' : 'Menu'}
       </MobileNavToggle>
